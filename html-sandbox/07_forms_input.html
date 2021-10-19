@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <form action="process.php">
+        <div>
+            <label for="name">Name</label>&nbsp;
+            <!-- The name tag is used for the server side -->
+            <input type="text" id="name" name="name" placeholder="Enter your name here"> <!--You need to match the for tag of label to the input id here for the UI to highlight it-->
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>&nbsp;
+            <input type="email" name="email" id="email" placeholder="Enter your email here">
+        </div>
+        <br>
+        <div>
+            <label for="message">Message</label><br><br>
+            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label>&nbsp;
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age</label>&nbsp;
+            <input type="number" name="age" id="age" style="width: 40px;">
+        </div>
+        <br>
+        <div>
+            <label for="birthday">Birthdate</label>&nbsp;
+            <input type="date" name="birthdate" id="birthday">
+        </div>
+        <br>
+        <div>
+            <label for="membership">Membership</label><br><br>
+            <input type="radio" name="server_membership" id="membership" value="Core" checked> Core
+            <input type="radio" name="server_membership" id="membership" value="Premium"> Premium
+            <input type="radio" name="server_membership" id="membership" value="Elite"> Elite
+        </div>
+        <br>
+        <div>
+            <label for="hobbies">Hobbies</label><br><br>
+            <input type="checkbox" name="server_hobbies" id="hobbies" value="Chess" checked> Chess
+            <input type="checkbox" name="server_hobbies" id="hobbies" value="Gaming"> Gaming
+            <input type="checkbox" name="server_hobbies" id="hobbies" value="YouTube"> YouTube
+        </div>
+        <br>
+        <input type="submit" value="Save"> &emsp14; <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
