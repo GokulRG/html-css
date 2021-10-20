@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importing external css file -->
+    <!-- Most preferred approach -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Implementing CSS</title>
+    <!-- Internal CSS -->
+    <!-- Still not the best approach, but at least it's separated from the actual html elements -->
+    <style>
+        /* h2 : selector
+           {  : declaration start
+           color: property
+           : : property/value separator
+           green : value
+           ; : declaration separator
+           } : declaration end
+        */
+        h2 {
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline css -->
+    <!-- Doing inline styling is not advised, for separation of concerns. You don't want your styling to be in the same file/space as your markup -->
+    <h1 style="color: red;">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+</body>
+
+</html>

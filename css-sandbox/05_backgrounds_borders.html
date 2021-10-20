@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds And Borders</title>
+    <style>
+        #box-1 {
+            background-color: blanchedalmond;
+            /* Border needs these 3 properties. All 3 are mandatory if you're using a border */
+            /* border-width: 3px;
+            border-color: red;
+            border-style: solid; */
+            /* Shorthand to use all 3 properties together. ORder doesn't matter */
+            border: 3px solid black;
+            /* For rounded corners use border radius */
+            border-radius: 10px;
+        }
+        #box-2 {
+            background: #333;
+            color: #fff;
+            border-top: blue solid 3px;
+            /* Rounds up the left border alone */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #box-3 {
+            /* background-image: url('../html-sandbox/img/sky.jpg'); */
+            color: #fff;
+            height: 300px;
+            width: 600px;
+            /* Repeats the image to fill it up. Think of windows wallpaper */
+            /* background-repeat: no-repeat; */
+            /* This is used to move the image around. Take 2 params x-axis and y-axis */
+            /* Remember that background position only applies to the background and not the content */
+            /* Can take both negative and positive values to move the background either way */
+            /* background-position: -100px -100px; */
+            /* background-position: center top; */
+             /* Resizes the image to fit the space. Entire image will be visible  */
+            /* background-size: cover; */
+            /* One property to include all the values above, just like border */
+            background: url('../html-sandbox/img/sky.jpg') no-repeat center center/cover;
+        }
+        #box-4 {
+            background: url('../html-sandbox/img/leaf.png') no-repeat center center/cover;
+            background-size: 300px 300px;
+            background-position: 360px 100px;
+            /* Image stays fixed even if page is scrolled */
+            /* background-attachment: fixed; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+    </div>
+    <br>
+    <div id="box-2">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+    </div>
+    <br>
+    <div id="box-3">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+    </div>
+    <br>
+    <div id="box-4">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium quas nulla fugiat excepturi
+            laboriosam? Nesciunt numquam distinctio debitis consectetur!</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        body {
+            background-color: #333;
+        }
+
+
+        /* . is for classes */
+        /* #green-heading {
+            color: green;
+        } */
+        .primary-heading {
+            color: green;
+        }
+
+        /* # is for Ids */
+        #welcome {
+            background-color: #f4f4f4;
+        }
+
+        /* Multiple selectors */
+        #welcome, #about {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Nested selector */
+        /* Selecting p elements from within the element with the Id - welcome */
+        #welcome p {
+            font-size: 20px;
+        }
+
+        #about {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Using IDs here, because there won't be another welcome div and there won't be another about div -->
+    <div id="welcome">
+        <!-- Id should be unique. So better to use class instead -->
+        <!-- <h2 id="green-heading">Welcome</h2> -->
+        <!-- class doesn't need to be unique and you can apply it to other elements as well -->
+        <!-- if you precede the green-heading with the element type, something like h2.green-heading, the style only applies to h2 elements -->
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquid officia nisi maxime aspernatur ipsa
+            doloremque ratione unde inventore dolorem?</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perspiciatis repellat quod! Adipisci tenetur
+            reiciendis voluptates nostrum repellat beatae quos!
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* 
+        
+        CSS Units Absolute
+        
+        cm = centimeters
+        mm = millimeters
+        in = inches
+        px = pixels (1 px = 1/96th of an inch)
+        pt = points (1 pt = 1/72nd of an inch)
+        pc = picas (12 pt)
+
+        CSS Units Relative
+
+        % = To parent element
+        em = Comparing to that of parent element (same logic as that of rem but takes the size from parent)
+        rem = Comparing to that of root element (root element is by default 16px) so 1 rem = 16 px 1.5 rem = 16*1.5
+        vw = To 1% of viewport width
+        vh = To 1% of viewport height
+        
+        */
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            /* Default font size 16px */
+            font-size: 18px;
+            /* The height of each line in the DOM. The higher the value, the higher the separation between two different lines */
+            line-height: 1.6em;
+        }
+
+        /* To target the particular span elements inside p elements of the div with id welcome */
+        #welcome p span {
+            font-weight: bold;
+        }
+
+        #about p span {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Vero aliquid officia nisi maxime aspernatur ipsa
+            doloremque ratione</span> unde inventore dolorem?</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Animi perspiciatis repellat quod! Adipisci tenetur
+            reiciendis voluptates nostrum repellat beatae quos!</span>
+        </p>
+    </div>
+</body>
+
+</html>
